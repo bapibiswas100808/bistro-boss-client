@@ -99,7 +99,9 @@ const Router = createBrowserRouter([
           </AdminRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/MenuCollections/${params.id}`),
+          fetch(
+            `https://bistro-boss-server-roan-omega.vercel.app/MenuCollections/${params.id}`
+          ),
       },
     ],
   },

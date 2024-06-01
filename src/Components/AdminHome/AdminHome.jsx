@@ -11,8 +11,6 @@ import {
   CartesianGrid,
   PieChart,
   Pie,
-  Sector,
-  ResponsiveContainer,
   Legend,
 } from "recharts";
 
