@@ -16,6 +16,8 @@ import DashManageItem from "../../Components/DashManageItem/DashManageItem";
 import DashUpdate from "../../Components/DashUpdate/DashUpdate";
 import Payment from "../../Components/Payment/Payment";
 import AllPayment from "../../Components/AllPayment/AllPayment";
+import AdminHome from "../../Components/AdminHome/AdminHome";
+import UserHome from "../../Components/UserHome/UserHome";
 
 const Router = createBrowserRouter([
   {
@@ -47,6 +49,15 @@ const Router = createBrowserRouter([
     ),
     children: [
       { path: "cart", element: <DashCart></DashCart> },
+      {
+        path: "adminHome",
+        element: (
+          <AdminRoute>
+            <AdminHome></AdminHome>
+          </AdminRoute>
+        ),
+      },
+      { path: "userHome", element: <UserHome></UserHome> },
       {
         path: "payment",
         element: <Payment></Payment>,
